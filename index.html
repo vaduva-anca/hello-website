@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" type="logo.png" href="logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styleee.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>SuperHello</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="SuperHello logo" src="img/logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#section-how">How it works</a>
+          </li>
+          <li><a class="main-nav-link" href="#section-benefits" >Benefits</a></li>
+          <li><a class="main-nav-link" href="#section-recent-work">Recent work</a></li>
+          
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta btn--show-modal" href="#">Log in</a></li>
+        </ul>
+      </nav>
+
+      
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+             
+             <div  data-framer-component-type="SVG" data-framer-name="shwhite" name="shwhite" style="image-rendering:pixelated;flex-shrink:0;background-size:100% 100%;background-image:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20567%20214%22%3E%3Cg%20id%3D%22ss597371727_1%22%3E%3Cg%20id%3D%22ss597371727_2%22%3E%3Cpath%20d%3D%22M%200%20209.525%20L%200%202.821%20L%2036.709%202.821%20L%2036.709%2088.94%20C%2041.504%2081.093%2047.887%2074.965%2055.922%2070.555%20C%2064.152%2065.951%2073.516%2063.681%2084.046%2063.681%20C%20101.639%2063.681%20115.214%2069.226%20124.772%2080.347%20C%20134.525%2091.436%20139.417%20107.713%20139.417%20129.146%20L%20139.417%20209.525%20L%20103%20209.525%20L%20103%20132.583%20C%20103%20120.326%20100.505%20110.956%2095.548%20104.438%20C%2090.752%2097.921%2083.106%2094.679%2072.608%2094.679%20C%2062.111%2094.679%2053.687%2098.31%2046.786%20105.573%20C%2040.079%20112.836%2036.742%20122.985%2036.742%20136.02%20L%2036.742%20209.525%20Z%20M%20226.444%20212.962%20C%20212.09%20212.962%20199.39%20209.915%20188.309%20203.786%20C%20177.228%20197.658%20168.512%20189.033%20162.194%20177.944%20C%20155.876%20166.855%20152.734%20154.015%20152.734%20139.489%20C%20152.734%20124.963%20155.779%20111.637%20161.903%20100.158%20C%20168.221%2088.68%20176.807%2079.764%20187.726%2073.473%20C%20198.806%2066.956%20211.831%2063.714%20226.735%2063.714%20C%20240.7%2063.714%20253.044%2066.762%20263.736%2072.89%20C%20274.46%2079.018%20282.755%2087.448%20288.684%2098.148%20C%20294.808%20108.686%20297.853%20120.456%20297.853%20133.458%20C%20297.853%20135.566%20297.756%20137.771%20297.562%20140.073%20C%20297.562%20142.375%20297.464%20144.774%20297.27%20147.238%20L%20189.151%20147.238%20C%20189.929%20158.328%20193.752%20167.05%20200.621%20173.372%20C%20207.684%20179.695%20216.205%20182.84%20226.152%20182.84%20C%20233.604%20182.84%20239.825%20181.219%20244.782%20177.944%20C%20249.934%20174.507%20253.757%20170.098%20256.252%20164.748%20L%20293.544%20164.748%20C%20290.855%20173.729%20286.384%20181.965%20280.066%20189.422%20C%20273.942%20196.685%20266.296%20202.425%20257.126%20206.64%20C%20248.152%20210.855%20237.913%20212.962%20226.444%20212.962%20Z%20M%20226.735%2093.544%20C%20217.76%2093.544%20209.822%2096.138%20202.921%20101.293%20C%20196.02%20106.254%20191.646%20113.939%20189.734%20124.25%20L%20260.593%20124.25%20C%20260.01%20114.879%20256.576%20107.422%20250.258%20101.845%20C%20243.94%2096.3%20236.099%2093.512%20226.735%2093.512%20Z%20M%20311.558%20209.525%20L%20311.558%202.821%20L%20348.268%202.821%20L%20348.268%20209.525%20Z%20M%20368.582%20209.525%20L%20368.582%202.821%20L%20405.292%202.821%20L%20405.292%20209.525%20Z%20M%20493.873%20212.962%20C%20480.103%20212.962%20467.662%20209.817%20456.581%20203.495%20C%20445.662%20197.172%20436.979%20188.482%20430.466%20177.361%20C%20424.148%20166.077%20421.006%20153.042%20421.006%20138.322%20C%20421.006%20123.601%20424.246%20110.664%20430.758%2099.575%20C%20437.27%2088.291%20445.954%2079.472%20456.872%2073.149%20C%20467.953%2066.826%20480.395%2063.681%20494.165%2063.681%20C%20507.935%2063.681%20519.988%2066.826%20530.874%2073.149%20C%20541.955%2079.472%20550.67%2088.259%20556.988%2099.575%20C%20563.501%20110.664%20566.741%20123.601%20566.741%20138.322%20C%20566.741%20153.042%20563.501%20166.077%20556.988%20177.361%20C%20550.67%20188.45%20541.987%20197.172%20530.874%20203.495%20C%20519.793%20209.817%20507.449%20212.962%20493.873%20212.962%20Z%20M%20493.873%20181.089%20C%20503.431%20181.089%20511.758%20177.555%20518.821%20170.454%20C%20525.884%20163.191%20529.448%20152.459%20529.448%20138.289%20C%20529.448%20124.12%20525.917%20113.517%20518.821%20106.416%20C%20511.758%2099.153%20503.528%2095.522%20494.165%2095.522%20C%20484.801%2095.522%20475.988%2099.153%20468.925%20106.416%20C%20462.024%20113.485%20458.59%20124.12%20458.59%20138.289%20C%20458.59%20152.459%20462.024%20163.159%20468.925%20170.454%20C%20475.988%20177.523%20484.315%20181.089%20493.873%20181.089%20Z%22%20fill%3D%22rgb(255%2C255%2C255)%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M%2077.144%2051.749%20C%2070.924%2051.749%2065.772%2050.225%2061.722%2047.177%20C%2057.672%2044.129%2055.372%2040.076%2054.756%2035.051%20L%2065.383%2035.051%20C%2065.902%2037.32%2067.165%2039.266%2069.174%2040.919%20C%2071.15%2042.508%2073.775%2043.319%2077.015%2043.319%20C%2080.255%2043.319%2082.523%2042.67%2083.981%2041.341%20C%2085.439%2040.012%2086.184%2038.488%2086.184%2036.769%20C%2086.184%2034.24%2085.147%2032.554%2083.106%2031.678%20C%2081.13%2030.738%2078.343%2029.928%2074.747%2029.182%20C%2071.96%2028.598%2069.174%2027.788%2066.388%2026.782%20C%2063.666%2025.777%2061.398%2024.383%2059.519%2022.6%20C%2057.737%2020.752%2056.83%2018.255%2056.83%2015.142%20C%2056.83%2010.83%2058.482%207.231%2061.787%204.41%20C%2065.092%201.492%2069.757%200.032%2075.719%200.032%20C%2081.227%200.032%2085.666%201.362%2089.035%204.021%20C%2092.47%206.679%2094.511%2010.408%2095.094%2015.272%20L%2084.953%2015.272%20C%2084.629%2013.164%2083.624%2011.478%2081.972%2010.311%20C%2080.384%209.111%2078.214%208.528%2075.492%208.528%20C%2072.77%208.528%2070.794%209.079%2069.336%2010.214%20C%2067.878%2011.284%2067.133%2012.678%2067.133%2014.396%20C%2067.133%2016.115%2068.137%2017.477%2070.114%2018.482%20C%2072.155%2019.487%2074.844%2020.362%2078.181%2021.173%20C%2081.486%2021.919%2084.532%2022.762%2087.318%2023.767%20C%2090.169%2024.707%2092.47%2026.102%2094.187%2027.95%20C%2095.904%2029.798%2096.779%2032.522%2096.779%2036.121%20C%2096.844%2040.628%2095.094%2044.389%2091.498%2047.372%20C%2087.998%2050.355%2083.171%2051.846%2077.08%2051.846%20Z%20M%20120.56%2051.749%20C%20114.599%2051.749%20109.901%2049.901%20106.434%2046.172%20C%20103.064%2042.443%20101.347%2036.931%20101.347%2029.538%20L%20101.347%201.2%20L%20111.877%201.2%20L%20111.877%2028.468%20C%20111.877%2038.034%20115.798%2042.8%20123.606%2042.8%20C%20127.526%2042.8%20130.734%2041.406%20133.261%2038.617%20C%20135.788%2035.829%20137.052%2031.841%20137.052%2026.685%20L%20137.052%201.2%20L%20147.582%201.2%20L%20147.582%2050.549%20L%20138.218%2050.549%20L%20137.408%2041.892%20C%20135.886%2044.94%20133.618%2047.372%20130.637%2049.155%20C%20127.721%2050.874%20124.351%2051.749%20120.496%2051.749%20Z%20M%20155.066%2072.436%20L%20155.066%201.2%20L%20164.527%201.2%20L%20165.629%208.852%20C%20167.216%206.517%20169.42%204.475%20172.206%202.691%20C%20174.992%200.908%20178.556%200%20182.963%200%20C%20187.726%200%20191.938%201.135%20195.599%203.372%20C%20199.26%205.642%20202.111%208.722%20204.152%2012.613%20C%20206.258%2016.536%20207.328%2020.978%20207.328%2025.939%20C%20207.328%2030.9%20206.258%2035.375%20204.152%2039.266%20C%20202.191%2043.039%20199.232%2046.202%20195.599%2048.409%20C%20191.938%2050.614%20187.726%2051.684%20182.866%2051.684%20C%20179.01%2051.684%20175.608%2050.906%20172.627%2049.382%20C%20169.711%2047.858%20167.378%2045.686%20165.661%2042.897%20L%20165.661%2072.371%20L%20155.131%2072.371%20Z%20M%20181.019%2042.573%20C%20185.522%2042.573%20189.248%2041.049%20192.164%2038.001%20C%20195.08%2034.888%20196.538%2030.835%20196.538%2025.875%20C%20196.538%2022.632%20195.89%2019.746%20194.562%2017.217%20C%20193.234%2014.688%20191.419%2012.743%20189.086%2011.348%20C%20186.754%209.889%20184.064%209.144%20181.019%209.144%20C%20176.515%209.144%20172.789%2010.7%20169.873%2013.813%20C%20167.022%2016.925%20165.596%2020.946%20165.596%2025.842%20C%20165.596%2030.738%20167.022%2034.856%20169.873%2037.969%20C%20172.789%2041.017%20176.515%2042.541%20181.019%2042.541%20Z%20M%20235.775%2051.717%20C%20230.947%2051.717%20226.638%2050.647%20222.847%2048.539%20C%20219.163%2046.377%20216.138%2043.249%20214.099%2039.493%20C%20211.993%2035.634%20210.924%2031.16%20210.924%2026.069%20C%20210.924%2020.978%20211.961%2016.342%20214.002%2012.418%20C%20216.108%208.495%20219.024%205.447%20222.75%203.275%20C%20226.541%201.07%20230.915%200%20235.872%200%20C%20240.829%200%20244.912%201.102%20248.508%203.275%20C%20252.104%205.382%20254.858%208.236%20256.867%2011.835%20C%20258.844%2015.402%20259.848%2019.357%20259.848%2023.67%20C%20259.848%2024.318%20259.816%2025.064%20259.751%2025.875%20C%20259.751%2026.62%20259.718%2027.431%20259.654%2028.371%20L%20221.26%2028.371%20C%20221.584%2033.138%20223.139%2036.802%20225.925%2039.331%20C%20228.776%2041.795%20232.049%2043.027%20235.775%2043.027%20C%20238.756%2043.027%20241.25%2042.378%20243.227%2041.049%20C%20245.268%2039.655%20246.791%2037.807%20247.795%2035.472%20L%20258.325%2035.472%20C%20256.997%2040.109%20254.34%2044%20250.355%2047.112%20C%20246.434%2050.225%20241.574%2051.782%20235.742%2051.782%20Z%20M%20235.775%208.625%20C%20232.276%208.625%20229.133%209.695%20226.411%2011.802%20C%20223.69%2013.845%20222.037%2016.99%20221.454%2021.173%20L%20249.286%2021.173%20C%20249.091%2017.315%20247.73%2014.267%20245.203%2012.029%20C%20242.676%209.76%20239.533%208.657%20235.742%208.657%20Z%20M%20264.805%2050.517%20L%20264.805%201.2%20L%20274.266%201.2%20L%20275.173%2010.57%20C%20276.89%207.328%20279.288%204.766%20282.334%202.918%20C%20285.444%201.005%20289.202%200.032%20293.576%200.032%20L%20293.576%2011.057%20L%20290.693%2011.057%20C%20287.777%2011.057%20285.152%2011.543%20282.82%2012.548%20C%20280.584%2013.488%20278.737%2015.11%20277.344%2017.412%20C%20276.016%2019.682%20275.368%2022.827%20275.368%2026.88%20L%20275.368%2050.582%20L%20264.838%2050.582%20Z%22%20fill%3D%22rgb(255%2C255%2C255)%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')" class="framer-4175rf"></div>
+            <p class="hero-description">
+              A design agency….kinda.
+            </p>
+            <p class="hero-description-small">
+              Unlimited revisions and a flat monthy fee.
+            </p>
+            <a href="#section-pricing" class="btn btn--full ">See Plans</a>
+
+            <a href="#section-how" class="btn btn--outline">Learn more &darr;</a>
+
+            </div>
+            <div class="hero-img-box">
+              <picture>
+                <img
+                  src="img/hero-img.webp"
+                  class="hero-img"
+                  alt="Robot"
+                />
+              </picture>
+            </div>
+    </section>
+            <div class="border">
+            <img 
+                  src="img/background-border-1.webp"
+                  class="border-1"
+                  alt="background-color-pink&yellow"
+                />
+              </div>
+              <section class="section-future" id="section-how" >
+                <div class="future">
+                  <img
+                  src="img/future-img.webp"
+                  class="future-img section-transform-vertical"
+                  alt="robot"
+                />
+                <div class="future-description section-transform-vertical">
+                 <h2 class="heading-secondary">The future of design services</h2>
+                 <p >Need stunning graphic design, intuitive UI/UX, or eye-catching web design?  Welcome home. We're Super Hello, your design partner for a flat monthly fee. We're all about delivering good creative in a new way. </p>
+                </div>
+                </div>
+              </section>
+
+
+              <section class="section-how-works" >
+                <h3 class="heading-tertiary">How it works</h3>
+                <div class="container grid grid--3-cols">
+                  <div class="works">
+                    <div class="center">
+                    <img
+                       src="img/how-works-1.webp"
+                       class="works-img"
+                       alt="Japanese Gyozas"
+                       />
+                      </div>
+                       <div class="how-works-content">
+                     <p class="how-title">Subscribe</p>
+                     <p class="how-description section">Kickstart your design adventure by hopping on our monthly subscription. For just $2k, you get unlimited dibs on top-notch design work.</p>
+                    </div>
+                  </div>
+                  <div class="works">
+                    <div class="center">
+                    <img
+                       src="img/how-works-2.webp"
+                       class="works-img"
+                       alt="Japanese Gyozas"
+                       />
+                      </div>
+                       <div class="how-works-content">
+                     <p class="how-title">Request</p>
+                     <p class="how-description">Alright, you're in! Now, it's time to toss your design tasks our way. Need a branding concept? A sleek landing page design? Or maybe a standout trifold brochure?</p>
+                    </div>
+                  </div>
+                  <div class="works">
+                    <div class="center">
+                    <img
+                       src="img/how-works-3.webp"
+                       class="works-img"
+                       alt="Japanese Gyozas"
+                       />
+                      </div>
+                    <div class="how-works-content">
+                     <p class="how-title">Review</p>
+                     <p class="how-description">Hold tight! In just 48 hours, you'll get your first peek at your completed design. And if it's not love at first sight, no worries!</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="border">
+                <img 
+                      src="img/background-border-2.webp"
+                      class="border-1"
+                      alt="background-color-pink&yellow"
+                    />
+                  </div>
+
+                  
+
+                  <section class="section-membership-benefits" id="section-benefits">
+                    <h3 class="heading-tertiary top-space">Membership benefits</h3>
+                    <div class=" container grid grid--2-cols section-transform-vertical ">
+                      <div class="member ">
+                        <img class="member-img"  src="img/member-benefits-1.webp" alt="Stears"/>
+                        <h4 class="heading-fourth " >Seasoned Pro at your service</h4>
+                        <p class="membership-description ">With a solid decade in the design biz and big names like Disney, CGV, and Zoos Victoria in the portfolio, you're in for a treat. Expect nothing less than top-drawer, professional designs for your business.</p>
+                      </div>
+                      <div class="member">
+                        <img class="member-img"  src="img/member-benefits-2.webp" alt="Stears"/>
+                        <h4 class="heading-fourth ">Unlimited Do-Overs & Wishlists</h4>
+                        <p class="membership-description ">At a single monthly rate, you get to call the shots with unlimited design requests and revisions. Keep tweaking until your design hits the sweet spot. You dream it, we design it!</p>
+                      </div>
+                      <div class="member">
+                        <img class="member-img"  src="img/member-benefits-3.webp" alt="Stears"/>
+                        <h4 class="heading-fourth ">Speedy Gonzales</h4>
+                        <p class="membership-description ">Who likes to wait, right? That's why most design tasks are zoomed over to you within a 48-hour window. Your projects keep zipping along, no pit stops.</p>
+                      </div>
+                      <div class="member">
+                        <img class="member-img"  src="img/member-benefits-4.webp" alt="Stears"/>
+                        <h4 class="heading-fourth">Big Bang for your buck</h4>
+                        <p class="membership-description">Get agency-level design awesomeness at a price that'll make you do a double-take. For a flat monthly fee, you get high-end design work that would cost you an arm and a leg at old school agencies.</p>
+                      </div>
+                      <div class="member">
+                        <img class="member-img"  src="img/member-benefits-5.webp" alt="Stears"/>
+                        <h4 class="heading-fourth ">No Meetings … ever</h4>
+                        <p class="membership-description ">We've cut the fluff and streamlined the process. You share your vision and requirements, and we get to work, resulting in faster turnaround times. </p>
+                      </div>
+                      <div class="member">
+                        <img class="member-img" src="img/member-benefits-6.webp" alt="Stears"/>
+                        <h4 class="heading-fourth ">Exclusive Access</h4>
+                        <p class="membership-description ">We limit our service to only a handful of clients per month, ensuring each client receives the personalized attention and quality they deserve. We're not just another design service—we're your dedicated design partner. </p>
+                      </div>
+                    </div>
+                  </section>
+
+
+                  <section class="section-featured">
+                  
+                    <h3 class="heading-featured-in">Previously worked with</h3>
+                    <div class="logos">
+                      <img src="img/logo-1.webp" alt="Disnep logo" />
+                      <img
+                        src="img/logo-2.webp"
+                        alt="CGV logo"
+                      />
+                      <img src="img/logo-3.webp" alt="VICTORIA logo" />
+                      <img src="img/logo-4.webp" alt="Farmers Content logo" />
+                      <img src="img/logo-5.webp" alt="Farmers Content logo" />
+                      <img src="img/forbes.png" alt="Forbes logo" />
+                    </div>
+                
+                 </section>
+
+
+                <div class="border">
+                  <img 
+                        src="img/background-border-3.webp"
+                        class="border-1"
+                        alt="background-color-pink&yellow"
+                      />
+                    </div>
+
+
+
+                    <section class="section-what-we-do" id="section-recent-work">
+                      <h3 class="heading-tertiary top-space">What we've been up to…</h3>
+                      <div class=" container grid grid--3-cols ">
+                      <div class="what-we-do-1">
+                        <img  class="what-we-do-img" src="img/ux-ui.webp" alt="UX/UI">
+                        <h4 class="heading-fourth">UI/UX</h4>
+                        <p class="membership-description">A user-friendly, intuitive app interface and icon set.</p>
+                      </div>
+                      <div class="what-we-do-2">
+                        <img class="what-we-do-img" src="img/branding.webp" alt="Branding & Pitch Deck">
+                        <h4 class="heading-fourth">Branding & Pitch Deck</h4>
+                        <p class="membership-description">A compelling, visually engaging brand and pitch deck created to attract investment for 'Iron Horizons,' a riveting new mini-series.</p>
+                      </div>
+                      <div class="what-we-do-3">
+                        <img class="what-we-do-img" src="img/landing.webp" alt="Landing page">
+                        <h4 class="heading-fourth">Landing page</h4>
+                        <p class="membership-description">A captivating landing page crafted to create hype and excitement around an upcoming metaverse project.</p>
+                      </div>
+                      <div class="what-we-do-4">
+                        <img class="what-we-do-img" src="img/graphic.png" alt="Graphic Design">
+                        <h4 class="heading-fourth">Graphic Design</h4>
+                        <p class="membership-description">Branding for a fitness app.</p>
+                      </div>
+                      </div>
+                    </section>
+
+
+
+                    <section class="section-view-more">
+                      <div class="view-more">
+                        <p class="paragraph-view-more">See more examples</p>
+                        <a href="#" class="btn btn-view-more">View more</a>
+                      </div>
+                    </section>
+
+
+                    <section class="section-testimonials">
+                      <div class="slider">
+                      <div class="slide">
+                      <div class="container">
+                        <div class="testimonials">
+                           <img src="img/stears.webp" alt="stars" class="stars-img section-transform-vertical"/>
+                           <p class="testimonial-description">"I found the perfect designer for my start up. I can scale as I need too - no more hiring hassles and amazing results."</p>
+                           <div class="testimonial-logo">
+                           <img src="img/testimonial-logo.webp"alt="logo" class="testimonial-logo-img"/>
+                           <div>
+                           <p>Blake A.</p>
+                           <span>Ngage Agency</span>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                        </div>
+                        
+                        <div class="slide">
+                              <div class="container">
+                                <div class="testimonials">
+                                   <img src="img/stears.webp" alt="stars" class="stars-img  section-transform-vertical"/>
+                                   <p class="testimonial-description">"Accusamus recusandae in, sit aperiam sunt officia quas maiores adipisci corrupti, ex quaerat voluptatem incidunt."</p>
+                                   <div class="testimonial-logo">
+                                   <img src="img/logo-2.webp"alt="logo" class="testimonial-logo-img"/>
+                                   <div>
+                                   <p>Francisco M.</p>
+                                   <span>Miles Agency</span>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                        </div>
+                        <div class="slide">
+                                  <div class="container">
+                                    <div class="testimonials ">
+                                       <img src="img/stears.webp" alt="stars" class="stars-img section-transform-vertical"/>
+                                       <p class="testimonial-description">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque reprehenderit voluptatibus  reprehenderit voluptatibus"</p>
+                                       <div class="testimonial-logo">
+                                       <img src="img/logo-3.webp"alt="logo" class="testimonial-logo-img"/>
+                                       <div>
+                                       <p>Francisco M.</p>
+                                       <span>Miles Agency</span>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                          </div>
+                        <button class="slider__btn slider__btn--left">&larr;</button>
+                        <button class="slider__btn slider__btn--right">&rarr;</button>
+                        <div class="dots"></div>
+                      </div>
+                    </section>
+
+                   
+
+
+
+
+
+                     <div class="border">
+                      <img 
+                            src="img/background-border-4.webp"
+                            class="border-1"
+                            alt="background-color-pink&yellow"
+                          />
+                        </div>
+                        
+                        <section class="section-just-start" id="section-pricing">
+                          <div class="container grid grid--2-cols-special">
+                          <div class="just-start-description ">
+                          <h4 class="heading-fourth">Don't just start up… </h4>
+                          <p>At a single monthly rate, you get to call the shots with unlimited design requests and revisions</p>
+                          <p>Secure your slot</p>
+                          <p>We value each of our clients and aim to provide exceptional service. To maintain our high standards, we only open up a handful of spots each month. This approach ensures that you receive the attention and expert service you deserve.</p>
+                          </div>
+                          
+                          <img src="img/RABBIT.webp" class="rabbit-img section-transform-vertical" alt="rabbit"/>
+                      
+                          </div>
+                        <section>
+                  
+                        <section class="section-pricing ">
+                          <div class="container grid grid--2-cols">
+                            <div class="pricing-plan pricing-plan--monthly">
+                              <header class="plan-header">
+                                <p class="plan-name">Monthly</p>
+                                <p class="plan-price"><span>$</span>795</p>
+                                <p class="plan-text">per month.</p>
+                              </header>
+                              <ul class="list">
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Unlimited Revisions</span>
+                                </li>
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Stock photos</span>
+                                </li>
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Ai Image generation</span>
+                                </li>
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Easy credit card payments</span>
+                                </li>
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Pause or cancel at anytime</span>
+                                </li>
+                              </ul>
+                              <div class="plan-sing-up">
+                                <a href="#" class="btn btn--full">Buy now</a>
+                              </div>
+                            </div>
+                  
+                            <div class="pricing-plan pricing-plan--complete">
+                              <header class="plan-header">
+                                <p class="plan-name">QUARTERLY</p>
+                                <p class="plan-price"><span>$</span>995</p>
+                                <p class="plan-text">per month.Paid quarterly</p>
+                              </header>
+                              <ul class="list">
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Unlimited Revisions</span>
+                                </li>
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Stock photos</span>
+                                </li>
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Ai Image generation</span>
+                                </li>
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Easy credit card payments</span>
+                                </li>
+                    
+                                <li class="list-item">
+                                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                                  <span>Save $200 per month.</span>
+                                </li>
+                              </ul>
+
+                              <div class="plan-sing-up">
+                                <a href="#" class="btn btn--full">Buy now</a>
+                              </div>
+                            </div>
+                      </section>
+
+                      
+
+                     
+                      
+
+
+
+
+                      <div class="border">
+                        <img 
+                              src="img/background-border-5.webp"
+                              class="border-1"
+                              alt="background-color-pink&yellow"
+                            />
+                      </div>
+
+
+
+
+
+                    <section class="section-faq">
+                      <h3 class="heading-tertiary top-space">FAQ</h3>
+                    <div class="accordion">
+  
+                      <div class="item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">What design services does Super Hello?</p>
+                        <div class="hidden-box">
+                          <p>
+                            Whether you're after striking graphics for marketing materials, a cutting-edge UI/UX design for your mobile app, or a compelling web design, Super Hello has got your back. We deliver high-quality designs that align with your vision, all under one subscription.
+                          </p>
+                        </div>
+                      </div>
+              
+
+                      <div class="item open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">What type of jobs aren't covered</p>
+                        <div class="hidden-box">
+                          <p>
+                            Due to the streamlined nature of our process we don't offer complex 3D/illustrations, motion or annual reports.
+
+                          </p>
+                  
+                        </div>
+                      </div>
+
+
+
+                      <div class="item open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">Who will be designing my work</p>
+                        <div class="hidden-box">
+                          <p>
+                            You'll be working directly with the founder of Super Hello, Dane Flighty. Dane brings to the table over a decade of design experience, having held senior positions in multiple prestigious agencies and has worked with  clients including  Disney, CGV, and Cointree.  His work has been showcased in publications such as of IdN Magazine, Creative Magazine and  can even be seen in the background of the popular TV show, "The IT Crowd".
+
+                          </p>
+                  
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="item open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">How is Super Hello different from a traditional agency
+                        </p>
+                        <div class="hidden-box">
+                          <p>
+                            We're all about flexibility, affordability, and, above all, quality. Unlike traditional agencies, Super Hello offers unlimited design requests and revisions for a flat monthly fee. You get top-tier design services without the hefty price tag or the long-term commitment. Plus, we deliver in 48 hours. How's that for speed?
+
+                          </p>
+                  
+                        </div>
+                      </div>
+
+                      <div class="item open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">Can I cancel or pause my subscription at any time?</p>
+                        <div class="hidden-box">
+                          <p>
+                            Yes, you can! We understand that needs change. With Super Hello, you're never locked in. You can pause or cancel your subscription at any time. We're here when you need us.
+                          </p>
+                  
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="item open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">What if I need a design revision?</p>
+                        <div class="hidden-box">
+                          <p>
+                            Not quite right? No problem. We offer unlimited revisions until we hit the mark. Your satisfaction is our ultimate goal.
+                          </p>
+                  
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="item open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">What's the turnaround time for design requests?</p>
+                        <div class="hidden-box">
+                          <p>
+                            We deliver fast—within 48 hours. We understand that in the world of business, time is of the essence, and we're committed to keeping you ahead of the game.
+
+
+                          </p>
+                  
+                        </div>
+                      </div>
+
+
+
+                      <div class="item open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">What tasks can be completed within the 48-hour timeframe?</p>
+                        <div class="hidden-box">
+                          <p>
+                            Our 48-hour turnaround covers a wide range of design tasks. Whether it's crafting a captivating landing page, developing a distinct brand concept, or presenting a preliminary look and feel for a multi-page brochure, we deliver high-quality results within this timeframe. These are just a few examples of what you can anticipate from our steamlined design service.
+                          </p>
+                  
+                        </div>
+                      </div>
+
+
+                      <div class="item open">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <p class="text">What software do you use for design?</p>
+                        <div class="hidden-box">
+                          <p>
+                            I use a range of software depending on the job including Figma, Adobe suite, Blender and Zbrush. Whatever your project requires we have the tools to make it happen.
+                          </p>
+                  
+                        </div>
+                      </div>
+
+
+                     
+                    </div>
+
+                  </section>
+
+                 
+                  <div class="border">
+                    <img 
+                          src="img/background-border-6.webp"
+                          class="border-1"
+                          alt="background-color-pink&yellow"
+                        />
+                      </div>
+                 
+                      
+
+
+    </main>     
+    
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Omnifood logo" src="img/logo.png" />
+           
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by SuperHello
+            All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@superhello.com"
+                >hello@superhello.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About SuperHello</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+
+
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Login in  just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn-log-in">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
