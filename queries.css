@@ -39,6 +39,69 @@
   .section-faq {
     padding: 1.6rem 3.2rem;
   }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: #f196e4;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  .framer-4175rf {
+    background-repeat: no-repeat;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
 }
 
 /* BELOW 944px (Tablets) */
@@ -137,7 +200,45 @@
     right: -20%;
     font-size: 1rem;
   }
+  .future-description {
+    line-height: 1.6;
+    font-size: 1.4rem;
+  }
+  /***********/
+  .heading-secondary {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 2.4rem;
+  }
+
+  .how-works-content {
+    padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+  }
+
+  .how-title {
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    text-align: center;
+  }
+
+  .how-description {
+    font-size: 1.6rem;
+    color: rgb(102, 102, 102);
+    line-height: 1.8;
+    text-align: center;
+  }
+  .grid {
+    display: grid;
+    column-gap: 2.4rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
+
 /*  BELOW 659 */
 @media (max-width: 42em) {
   .framer-4175rf {
@@ -237,6 +338,10 @@
   }
   .just-start-description {
     padding-top: 5.2rem;
+  }
+  .submit {
+    font-size: 2.8rem;
+    margin-bottom: 4.6rem;
   }
 }
 /*  BELOW 659 */
@@ -348,5 +453,12 @@
   .footer {
     font-size: 1rem;
     line-height: 0.5;
+  }
+  .dim {
+    width: 70%;
+  }
+  .submit {
+    font-size: 1.8rem;
+    margin-bottom: 3.6rem;
   }
 }

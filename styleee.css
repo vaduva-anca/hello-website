@@ -946,3 +946,71 @@ body {
   background-color: #888;
   opacity: 1;
 }
+
+.testimonial-section {
+  background-color: #fff;
+  border-bottom: 0.5px solid #888;
+  padding-bottom: 9.6rem;
+  padding-top: 9.6rem;
+}
+.dim {
+  width: 50%;
+}
+.submit {
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 8.4rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  padding-top: 5px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  font-size: 40px;
+  cursor: pointer;
+  color: #ccc; /
+}
+
+.star.selected,
+.star.hover {
+  color: #e67e22; 
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #e67e22; 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #cf711f; 
+}
